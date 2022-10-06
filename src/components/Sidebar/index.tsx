@@ -1,9 +1,17 @@
 import logo from '../../assets/images/ferreiraCosta-logo.png'
 
-export const Sidebar = () => {
+import {Sidebar} from './styles'
+
+export const SidebarComponent = () => {
     return (
-        <div >
+        <Sidebar>
+            <img src={logo} alt="logo da ferreira costa" className='icon' />
             
-        </div>
+            <div className='links'>
+                <a href=""><p>Dashboard</p></a>
+                <br />
+                <a href=""><p>Pedidos</p></a>
+            </div>
+        </Sidebar>
     )
 }

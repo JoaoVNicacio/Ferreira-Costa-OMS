@@ -1,13 +1,14 @@
+import {HomePage} from './pages/homePage'
+
+import GlobalStyles from './styles/global'
+
 const App = () => {
 
   return (
-
-    <div className="App">
-
-      
-
+    <div>
+      <GlobalStyles/>
+      <HomePage/>
     </div>
-
   )
 
 }
