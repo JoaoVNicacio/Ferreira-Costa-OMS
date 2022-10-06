@@ -7,6 +7,7 @@ export const Sidebar = styled.aside`
     width: 12rem;
     position: fixed;
     background-color: #AA0E27;
+    margin-right: 1rem;
     
     .icon{
         position: relative;
