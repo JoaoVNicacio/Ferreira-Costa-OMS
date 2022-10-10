@@ -8,17 +8,18 @@ export const OrderTable = styled.section`
     position: relative;
     background-color: #FFF;
     border-radius: 1rem;
-    margin-left: 14rem;
     padding: 1rem;
 
     .table{
         tr{
             th{
+                display: inline-block;
                 margin: 1rem;
             }
 
             td{
-                margin: 1rem;
+                display: inline-block;
+                margin: 0.5rem;
             }
         }
     }

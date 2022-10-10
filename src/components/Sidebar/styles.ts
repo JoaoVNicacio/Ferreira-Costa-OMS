@@ -5,9 +5,9 @@ export const Sidebar = styled.aside`
 
     height: 100vh;
     width: 12rem;
-    position: fixed;
     background-color: #AA0E27;
     margin-right: 1rem;
+    position: fixed;
     
     .icon{
         position: relative;

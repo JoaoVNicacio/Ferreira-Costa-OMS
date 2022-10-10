@@ -7,9 +7,8 @@ const TableComponent = () => {
     return (
 
         <OrderTable>
-                <section className='table'>
 
-                    <table>
+                    <table  className='table'>
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
@@ -47,7 +46,6 @@ const TableComponent = () => {
                         </tr>
                     </table>
 
-                </section>
         </OrderTable>
 
     )
