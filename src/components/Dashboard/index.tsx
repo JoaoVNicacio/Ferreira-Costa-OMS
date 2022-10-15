@@ -26,7 +26,6 @@ export const DashboardComponent = () => {
         </section>
 
         <section className='leftBiggerItem'>
-
             <table>
                 <thead>
                     <th>Prazos mais próximos:</th>
@@ -38,10 +37,55 @@ export const DashboardComponent = () => {
                     <td>Johson</td>
                     <td>20/10/2022 às 15:00</td>
                 </tr>
+            </table>
+        </section>
 
+        <aside className="rightLesserItem">
+            <table>
+                <thead>
+                    <th>Em transporte:</th>
+                </thead>
+
+                <tr>
+                    <td>#2444</td>
+                    <td>Em transporte</td>
+                    <td>Johson</td>
+                    <td>20/10/2022 às 15:00</td>
+                </tr>
             </table>
 
+        </aside>
+
+        <section className='leftBiggerItem'>
+            <table>
+                <thead>
+                    <th>Novos Pedidos:</th>
+                </thead>
+
+                <tr>
+                    <td>#2444</td>
+                    <td>Aguardando aprovação</td>
+                    <td>Johson</td>
+                    <td>20/10/2022 às 15:00</td>
+                </tr>
+            </table>
         </section>
+
+        <aside className="rightLesserItem">
+            <table>
+                <thead>
+                    <th>Atrasados</th>
+                </thead>
+
+                <tr>
+                    <td>#2444</td>
+                    <td>Em transporte</td>
+                    <td>Johson</td>
+                    <td>20/10/2022 às 15:00</td>
+                </tr>
+            </table>
+
+        </aside>
 
     </section>
 
