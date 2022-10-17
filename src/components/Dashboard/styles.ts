@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Dashboard = styled.section`
+export const Container = styled.section`
     .dashboard{
         width: auto;
         height: auto;
