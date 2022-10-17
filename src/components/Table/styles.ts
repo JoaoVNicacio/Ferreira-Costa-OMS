@@ -9,6 +9,7 @@ export const OrderTable = styled.section`
     background-color: #FFF;
     border-radius: 1rem;
     padding: 1rem;
+    margin-left: 14rem;
 
     .table{
         tr{
