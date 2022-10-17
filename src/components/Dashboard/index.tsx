@@ -1,11 +1,11 @@
 import React from 'react'
-import { Dashboard } from './styles'
+import { Container } from './styles'
 
 const DashboardComponent = () => {
 
     return (
 
-        <Dashboard>
+        <Container>
 
             <section className='dashboard'>
 
@@ -13,7 +13,7 @@ const DashboardComponent = () => {
 
                     <table>
                         <tr>
-                            <th>Entregue:</th>
+                            <th>A ser entregue:</th>
                             <th>Entregue:</th>
                             <th>Atrasados:</th>
                             <th>Negados:</th>
@@ -91,7 +91,7 @@ const DashboardComponent = () => {
 
             </section>
 
-        </Dashboard>
+        </Container>
     )
 
 }

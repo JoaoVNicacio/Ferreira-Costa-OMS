@@ -18,7 +18,7 @@ export default createGlobalStyle`
     input,
     button,
     textarea {
-        font-family: sans-serif;
+        font-family: 'Inter', sans-serif;
         font-weight: 400;
         font-size: 1rem;
     }
