@@ -1,6 +1,7 @@
 import { SidebarComponent } from "../components/Sidebar" 
 import TableComponent from "../components/Table"
 import Wrapper from '../styles/wrapper'
+import DashboardComponent from "../components/Dashboard"
 
 
 export const HomePage = () => {
@@ -8,7 +9,7 @@ export const HomePage = () => {
     return (
         <Wrapper>
             <SidebarComponent/>
-            <TableComponent/>
+            <DashboardComponent/>
         </Wrapper>
     )
 
