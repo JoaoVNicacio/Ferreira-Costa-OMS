@@ -7,7 +7,7 @@ export const OrderTable = styled.section`
     width: auto;
     position: relative;
     background-color: #FFF;
-    border-radius: 1rem;
+    border-radius: 8px;
     padding: 1rem;
     margin-left: 14rem;
 
