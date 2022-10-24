@@ -1,5 +1,4 @@
-import { SidebarComponent } from "../components/Sidebar" 
-import TableComponent from "../components/Table"
+import SidebarComponent from "../components/Sidebar" 
 import Wrapper from '../styles/wrapper'
 import DashboardComponent from "../components/Dashboard"
 

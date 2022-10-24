@@ -1,8 +1,9 @@
-import logo from '../../assets/images/ferreiraCosta-logo.png'
+import React from 'react'
 
+import logo from '../../assets/images/ferreiraCosta-logo.png'
 import {Sidebar} from './styles'
 
-export const SidebarComponent = () => {
+const SidebarComponent = () => {
     return (
         <Sidebar>
             <img src={logo} alt="logo da ferreira costa" className='icon' />
@@ -15,3 +16,5 @@ export const SidebarComponent = () => {
         </Sidebar>
     )
 }
+
+export default SidebarComponent
