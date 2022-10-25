@@ -12,7 +12,7 @@ export const Container = styled.section`
         }
 
         .upperItem{
-            width: 76.5rem;
+            width: 100%;
             height: auto;
             background-color: #FFF;
             border-radius: 8px;
@@ -36,7 +36,7 @@ export const Container = styled.section`
 
 
         .leftBiggerItem{
-            width: 49rem;
+            width: 70%;
             height: 18rem;
             background-color: #FFF;
             border-radius: 8px;
@@ -59,7 +59,7 @@ export const Container = styled.section`
         }
 
         .rightSmallerItem{
-            width: 26rem;
+            width: 30%;
             height: 18rem;
             background-color: #FFF;
             border-radius: 8px;
