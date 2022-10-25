@@ -10,7 +10,6 @@ export const Container = styled.section`
             display: flex;
             flex-direction: row;
         }
-       
 
         .upperItem{
             width: 76.5rem;

@@ -2,7 +2,7 @@ import { TimeFilter } from "./style"
 
 const TimeFilterComponent = () => {
     return (
-        <TimeFilter>
+        <TimeFilter className="filter">
             <button className="click">Este mês</button>
             <div className="list">
                 <button className="links">Último mês</button>
