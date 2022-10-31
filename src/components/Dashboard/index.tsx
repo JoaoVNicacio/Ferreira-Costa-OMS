@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Container } from './styles'
 
 const DashboardComponent = () => {
+
+    const [orders, setOrders] = useState(mockedOrders)
 
     return (
 
@@ -109,13 +111,9 @@ const getOrders = async () => {
         .then((data) => {
             console.log(data);
 
-            for (let i = 0; i <= data.length; i++) {
-
-            }
 
         })
 }
-
 
 
 const mockedOrders : object = [

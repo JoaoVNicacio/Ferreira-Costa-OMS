@@ -4,6 +4,8 @@ import { useState } from 'react'
 // A tabela está com itens adicionandos a mão, ainda iremos adicionar tudo em arrays de objetos para mockar os dados de forma melhor
 const TableComponent = () => {
 
+    const [orders, setOrders] = useState(mockedOrders)
+
     return (
 
         <OrderTable>
@@ -51,5 +53,39 @@ const TableComponent = () => {
     )
 
 }
+
+const getOrders = async () => {
+    fetch(`/orders`)
+
+        .then((response) => response.json())
+
+        .then((data) => {
+            console.log(data);
+
+
+        })
+}
+
+
+const mockedOrders : object = [
+    {
+        id: 2444,
+        name: "Johnson",
+        email: "johnson@email.com",
+        status: "Aguardando antifraude",
+        dateOfDeliveryDeadline: "20/10/2022 às 14:00",
+        dateOfEnter: "12/10/2022 às 14:00",
+        products: [
+            "1x Serra Circular", "1x Trena", "2x Caixa de ferramntas"
+        ],
+        spentTimeInAntifraud: "2 horas",
+        spentTimeInSeparation: "--",
+        spentTimeInPackaging: "--",
+        spentTimeInLogistics: "--",
+        spentTimeInTransportation: "--",
+        dateOfDelivery: "--",
+        commentary: ""
+    },
+]
 
 export default TableComponent
