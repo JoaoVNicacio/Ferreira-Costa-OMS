@@ -2,6 +2,7 @@ import SidebarComponent from "../components/Sidebar"
 import Wrapper from '../styles/wrapper'
 import DashboardComponent from "../components/Dashboard"
 import TimeFilterComponent from "../components/TimeFilter"
+import TableComponent from "../components/Table"
 
 export const HomePage = () => {
 

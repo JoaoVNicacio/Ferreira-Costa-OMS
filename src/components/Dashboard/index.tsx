@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import { Container } from './styles'
+import axios from 'axios'
+import mockedOrders from '../../mocked_data/mockedOrders'
 
 const DashboardComponent = () => {
 
@@ -103,38 +105,19 @@ const DashboardComponent = () => {
 
 }
 
-const getOrders = async () => {
-    fetch(`/orders`)
+axios.get('/orders')
 
-        .then((response) => response.json())
+  .then(function (response) {
+  
+  })
 
-        .then((data) => {
-            console.log(data);
+  .catch(function (error) {
+    console.log(error);
+  })
 
+  .then(function () {
 
-        })
-}
+  });
 
-
-const mockedOrders : object = [
-    {
-        id: 2444,
-        name: "Johnson",
-        email: "johnson@email.com",
-        status: "Aguardando antifraude",
-        dateOfDeliveryDeadline: "20/10/2022 às 14:00",
-        dateOfEnter: "12/10/2022 às 14:00",
-        products: [
-            "1x Serra Circular", "1x Trena", "2x Caixa de ferramntas"
-        ],
-        spentTimeInAntifraud: "2 horas",
-        spentTimeInSeparation: "--",
-        spentTimeInPackaging: "--",
-        spentTimeInLogistics: "--",
-        spentTimeInTransportation: "--",
-        dateOfDelivery: "--",
-        commentary: ""
-    },
-]
 
 export default DashboardComponent
