@@ -10,7 +10,7 @@ const TableComponent = () => {
 
         <OrderTable>
 
-            <table className='table'>
+            <table>
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
@@ -42,17 +42,17 @@ const TableComponent = () => {
 
 axios.get('/orders')
 
-  .then(function (response) {
-  
-  })
+.then(function (response) {
 
-  .catch(function (error) {
-    console.log(error);
-  })
+})
 
-  .then(function () {
+.catch(function (error) {
+console.log(error);
+})
 
-  });
+.then(function () {
+
+});
 
 
 export default TableComponent

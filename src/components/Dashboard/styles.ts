@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.section`
     .dashboard{
         width: 88.5%;
-        height: 100%;
+        height: auto;
         margin: 0;
 
         .rowOfItems{

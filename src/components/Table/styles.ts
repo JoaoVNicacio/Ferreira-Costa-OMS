@@ -11,7 +11,7 @@ export const OrderTable = styled.section`
     padding: 1rem;
     margin-left: 14rem;
 
-    .table{
+    table{
         tr{
             th{
                 display: inline-block;

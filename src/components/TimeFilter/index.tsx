@@ -1,27 +1,24 @@
 import React, {useState} from 'react'
 import { TimeFilter } from "./style"
 
-const TimeFilterComponent = () => {
+const TimeFilterComponent: any = ({selected, setSelected}: any) => {
 
     const [isActive, setIsActive] = useState(false);
+    const options = ['Este mês(Novembro)', 'Último mês(Outubro)', 'Último trimestre', 'Último semestre', 'Último ano']
 
     return (
         <TimeFilter>
-            <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>Este mês (novembro)▼</div>
+            <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>{selected}▼</div>
             {isActive && (
-                <div className="dropdown-content">
-                <div className="dropdown-item">
-                    Último mês(outubro)
-                </div>
-                <div className="dropdown-item">
-                    Último trimestre
-                </div>
-                <div className="dropdown-item">
-                    Último semestre
-                </div>
-                <div className="dropdown-item">
-                    Último ano
-                </div>
+            <div className="dropdown-content">
+                {options.map(option => (
+                    <div onClick={e => {setSelected(option)
+                    setIsActive(false)}
+                    } className="dropdown-item">
+                    {option}
+                    </div>
+                ))}
+                
             </div>
             )}
         </TimeFilter>

@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const TimeFilter = styled.div`
     width: 20vw;
     height: 15vh;
-    border: 1px solid red;
     padding: 1rem;
     position: relative;
+    user-select: none;
 
     .dropdown-btn{
         padding: 1rem;
@@ -20,7 +20,7 @@ export const TimeFilter = styled.div`
         position: absolute;
         padding: 15px;
         background-color: #fff;
-        width: 89.2%;
+        width: 90.2%;
     }
 
     .dropdown-item{
