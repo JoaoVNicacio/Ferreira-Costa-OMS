@@ -9,8 +9,6 @@ export default createGlobalStyle`
 
     body {
         -webkit-font-smoothing: antialiased;
-        display: flex;
-        flex-direction: row;
         background-color: #F5F5F5;
     }
 

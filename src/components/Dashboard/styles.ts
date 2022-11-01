@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     .dashboard{
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
         
 
         .rowOfItems{
@@ -12,7 +12,7 @@ export const Container = styled.section`
         }
 
         .upperItem{
-            width: 100%;
+            width: 99%;
             height: auto;
             background-color: #FFF;
             border-radius: 8px;
