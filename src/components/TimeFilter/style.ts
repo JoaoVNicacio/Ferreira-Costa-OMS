@@ -1,35 +1,36 @@
 import styled from 'styled-components'
 
 export const TimeFilter = styled.div`
-    width: 200px;
+    width: 20vw;
+    height: 15vh;
+    border: 1px solid red;
+    padding: 1rem;
+    position: relative;
 
-    .click{
+    .dropdown-btn{
+        padding: 1rem;
         background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .dropdown-content{
+        position: absolute;
+        padding: 15px;
+        background-color: #fff;
+        width: 89.2%;
+    }
+
+    .dropdown-item{
         padding: 5px;
-        /* font-size: ; */
-        font-family: "Inter", sans-serif;
-        border: none;
-        outline: none;
-        width: 200px;
-        /* color: ; */
+        cursor: pointer;
+        transition: all .2s;
 
         &:hover{
-            background-color: #ddd;
+            background-color: #f4f4f4;
         }
     }
 
-    .links{
-        padding: 5px;
-        /* font-size: ; */
-        font-family: "Inter", sans-serif;
-        border: none;
-        outline: none;
-        width: 200px;
-        /* color: ; */
-        background-color: lightblue; 
-
-        &:hover{
-            background-color: rgb(255,255,255);
-        }
-    }
 `

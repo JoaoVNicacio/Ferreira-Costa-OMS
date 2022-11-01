@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     .dashboard{
-        width: 100%;
+        width: 88.5%;
         height: 100%;
-        
+        margin: 0;
 
         .rowOfItems{
             display: flex;

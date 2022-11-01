@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr 8fr;
     grid-template-rows: 10vw 75vw;
     overflow-y: hidden;
+    overflow-x: hidden;
 
     grid-template-areas: 
         "aside filter"
