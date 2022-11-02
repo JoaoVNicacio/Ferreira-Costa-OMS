@@ -14,6 +14,7 @@ export const HomePage = () => {
             <SidebarComponent/>
             <TimeFilterComponent selected={selected} setSelected={setSelected}/>
             <DashboardComponent/>
+            <TableComponent/>
         </Wrapper>
     )
 

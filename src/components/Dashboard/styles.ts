@@ -17,7 +17,7 @@ export const Container = styled.section`
             background-color: #FFF;
             border-radius: 8px;
             margin: 0.3rem;
-            box-shadow: 0 5px 5px 0px rgba(0, 0, 0,0.2);
+            box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
 
             table{
                 tr{
@@ -41,7 +41,7 @@ export const Container = styled.section`
             background-color: #FFF;
             border-radius: 8px;
             margin: 0.3rem 0.7rem 0.3rem 0.5rem;
-            box-shadow: 0 5px 5px 0px rgba(0, 0, 0,0.2);
+            box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
 
             table{
                 tr{

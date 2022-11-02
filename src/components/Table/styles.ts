@@ -10,9 +10,13 @@ export const OrderTable = styled.section`
     border-radius: 8px;
     padding: 1rem;
     margin-left: 14rem;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
 
     table{
+
         tr{
+            background-color: #D9D9D9;
+
             th{
                 display: inline-block;
                 margin: 1rem;
@@ -23,6 +27,11 @@ export const OrderTable = styled.section`
                 margin: 0.5rem;
             }
         }
+
+        tr:first-child {
+            background-color: #FFF;
+        }
+
     }
     
 `

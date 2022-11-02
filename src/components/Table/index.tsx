@@ -1,5 +1,4 @@
 import { OrderTable } from './styles'
-import { useState } from 'react'
 import axios from 'axios'
 import mockedOrders from '../../mocked_data/mockedOrders'
 
@@ -19,18 +18,19 @@ const TableComponent = () => {
                     <th>Data de entrada</th>
                     <th>Data de entrega</th>
                 </tr>
+                <hr/>
 
-                    { mockedOrders.map((mockedOrder, index) =>
+                {mockedOrders.map((mockedOrder, index) =>
 
-                        <tr key={index}>
-                            <td>{ mockedOrder.id }</td>
-                            <td>{ mockedOrder.name }</td>
-                            <td>{ mockedOrder.email }</td>
-                            <td>{ mockedOrder.status }</td>
-                            <td>{ mockedOrder.dateOfEnter} </td>
-                            <td>{ mockedOrder.dateOfDeliveryDeadline }</td>
-                        </tr>
-                    ) }
+                    <tr key={index}>
+                        <td>{mockedOrder.id}</td>
+                        <td>{mockedOrder.name}</td>
+                        <td>{mockedOrder.email}</td>
+                        <td>{mockedOrder.status}</td>
+                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric'})}</td>
+                        <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric'})}</td>
+                    </tr>
+                )}
 
             </table>
 
@@ -42,17 +42,17 @@ const TableComponent = () => {
 
 axios.get('/orders')
 
-.then(function (response) {
+    .then(function (response) {
 
-})
+    })
 
-.catch(function (error) {
-console.log(error);
-})
+    .catch(function (error) {
+        console.log(error);
+    })
 
-.then(function () {
+    .then(function () {
 
-});
+    });
 
 
 export default TableComponent
