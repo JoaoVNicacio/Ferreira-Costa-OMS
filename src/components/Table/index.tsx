@@ -18,18 +18,22 @@ const TableComponent = () => {
                     <th>Data de entrada</th>
                     <th>Data de entrega</th>
                 </tr>
-                <hr/>
+                <hr />
 
                 {mockedOrders.map((mockedOrder, index) =>
 
                     <tr key={index}>
-                        <td>{mockedOrder.id}</td>
-                        <td>{mockedOrder.name}</td>
-                        <td>{mockedOrder.email}</td>
-                        <td>{mockedOrder.status}</td>
-                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric'})}</td>
-                        <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric'})}</td>
+                        <div>
+                            <td>#{mockedOrder.id}</td>
+                            <td>{mockedOrder.name}</td>
+                            <td>{mockedOrder.email}</td>
+                            <td>{mockedOrder.status}</td>
+                            <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                            <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                            <button>+</button>
+                        </div>
                     </tr>
+
                 )}
 
             </table>

@@ -10,7 +10,7 @@ const SidebarComponent = () => {
             
             <div className='links'>
                 <a href=""><p>Dashboard</p></a>
-                <br />
+                <br/>
                 <a href=""><p>Pedidos</p></a>
             </div>
         </Sidebar>

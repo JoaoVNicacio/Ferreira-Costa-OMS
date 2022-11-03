@@ -1,0 +1,7 @@
+import mockedOrders from './mockedOrders';
+
+const mockedNewerOrders = mockedOrders.sort(
+  (objA, objB) => Number(objA.dateOfEnter) - Number(objB.dateOfEnter),
+);
+
+
