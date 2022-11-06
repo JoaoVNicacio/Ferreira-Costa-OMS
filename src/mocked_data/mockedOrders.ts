@@ -53,6 +53,44 @@ const mockedOrders: {
             dateOfDelivery: 0,
             commentary: ""
         },
+
+        {
+            id: 2446,
+            name: "Peter",
+            email: "peter@email.com",
+            status: "Atrasado",
+            dateOfDeliveryDeadline: new Date(2022, 10, 20),
+            dateOfEnter: new Date(2022, 10, 12, 14),
+            products: [
+                "1x Serra Circular", "1x Trena", "2x Caixa de ferramentas"
+            ],
+            spentTimeInAntifraud: 2,
+            spentTimeInSeparation: 0,
+            spentTimeInPackaging: 0,
+            spentTimeInLogistics: 0,
+            spentTimeInTransportation: 0,
+            dateOfDelivery: 0,
+            commentary: ""
+        },
+
+        {
+            id: 2447,
+            name: "Peter",
+            email: "peter@email.com",
+            status: "Em transporte",
+            dateOfDeliveryDeadline: new Date(2022, 10, 15),
+            dateOfEnter: new Date(2022, 10, 12, 14),
+            products: [
+                "1x Serra Circular", "1x Trena", "2x Caixa de ferramentas"
+            ],
+            spentTimeInAntifraud: 2,
+            spentTimeInSeparation: 0,
+            spentTimeInPackaging: 0,
+            spentTimeInLogistics: 0,
+            spentTimeInTransportation: 0,
+            dateOfDelivery: 0,
+            commentary: ""
+        },
     ]
 
 export default mockedOrders

@@ -1,6 +1,6 @@
 import mockedOrders from './mockedOrders';
 
-const mockedNewerOrders: {
+const mockedClosestOrders: {
 
   id: number,
   name: string,
@@ -18,9 +18,7 @@ const mockedNewerOrders: {
   commentary: string
 
 }[] = mockedOrders.sort(
-  (objA, objB) => Number(objA.dateOfEnter) - Number(objB.dateOfEnter),
+  (objA, objB) => Number(objA.dateOfDeliveryDeadline) - Number(objB.dateOfDeliveryDeadline)
 );
 
-export default mockedNewerOrders
-
-
+export default mockedClosestOrders

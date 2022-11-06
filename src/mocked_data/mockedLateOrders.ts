@@ -1,6 +1,6 @@
 import mockedOrders from './mockedOrders';
 
-const mockedNewerOrders: {
+const mockedLateOrders: {
 
   id: number,
   name: string,
@@ -17,10 +17,8 @@ const mockedNewerOrders: {
   dateOfDelivery: number,
   commentary: string
 
-}[] = mockedOrders.sort(
-  (objA, objB) => Number(objA.dateOfEnter) - Number(objB.dateOfEnter),
-);
+}[] = mockedOrders.filter((obj) => {
+  return obj.status === 'Atrasado'
+})
 
-export default mockedNewerOrders
-
-
+export default mockedLateOrders

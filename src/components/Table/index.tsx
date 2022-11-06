@@ -2,7 +2,6 @@ import { OrderTable } from './styles'
 import axios from 'axios'
 import mockedOrders from '../../mocked_data/mockedOrders'
 
-
 const TableComponent = () => {
 
     return (

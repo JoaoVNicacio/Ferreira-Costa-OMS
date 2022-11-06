@@ -1,11 +1,14 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Container } from './styles'
 import axios from 'axios'
-import mockedOrders from '../../mocked_data/mockedOrders'
+import mockedNewerOrders from '../../mocked_data/mockedOrders'
+import mockedLateOrders from '../../mocked_data/mockedLateOrders'
+import mockedInTransportationOrders from '../../mocked_data/mockedInTransportationOrders'
+import mockedClosestOrders from '../../mocked_data/mockedClosestOrders'
+
 
 const DashboardComponent = () => {
 
-    const [orders, setOrders] = useState(mockedOrders)
 
     return (
 
@@ -42,12 +45,16 @@ const DashboardComponent = () => {
                                 <th>Prazos mais próximos:</th>
                             </thead>
 
-                            <tr>
-                                <td>#2444</td>
-                                <td>Entregue à transportadora</td>
-                                <td>Johson</td>
-                                <td>20/10/2022 às 15:00</td>
-                            </tr>
+                            {mockedClosestOrders.map((mockedOrder, index) =>
+
+                                <tr key={index}>
+                                    <div>
+                                        <td>#{mockedOrder.id}</td>
+                                        <td>{mockedOrder.status}</td>
+                                        <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                                    </div>
+                                </tr>
+                            )}
                         </table>
                     </section>
 
@@ -57,11 +64,17 @@ const DashboardComponent = () => {
                                 <th>Em transporte:</th>
                             </thead>
 
-                            <tr>
-                                <td>#2444</td>
-                                <td>Em transporte</td>
-                                <td>20/10/2022 às 15:00</td>
-                            </tr>
+                            {mockedInTransportationOrders.map((mockedOrder, index) =>
+
+                                <tr key={index}>
+                                    <div>
+                                        <td>#{mockedOrder.id}</td>
+                                        <td>{mockedOrder.status}</td>
+                                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                                        <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                                    </div>
+                                </tr>
+                            )}
                         </table>
                     </aside>
                 </section>
@@ -70,15 +83,20 @@ const DashboardComponent = () => {
                     <section className='leftBiggerItem'>
                         <table>
                             <thead>
-                                <th>Novos Pedidos:</th>
+                                <th>Pedidos Mais Recentes:</th>
                             </thead>
 
-                            <tr>
-                                <td>#2444</td>
-                                <td>Aguardando aprovação</td>
-                                <td>Johson</td>
-                                <td>20/10/2022 às 15:00</td>
-                            </tr>
+                            {mockedNewerOrders.map((mockedOrder, index) =>
+
+                                <tr key={index}>
+                                    <div>
+                                        <td>#{mockedOrder.id}</td>
+                                        <td>{mockedOrder.status}</td>
+                                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                                        <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                                    </div>
+                                </tr>
+                            )}
                         </table>
                     </section>
 
@@ -88,11 +106,16 @@ const DashboardComponent = () => {
                                 <th>Atrasados</th>
                             </thead>
 
-                            <tr>
-                                <td>#2444</td>
-                                <td>Em transporte</td>
-                                <td>20/10/2022 às 15:00</td>
-                            </tr>
+                            {mockedLateOrders.map((mockedOrder, index) =>
+                                <tr key={index}>
+                                    <div>
+                                        <td>#{mockedOrder.id}</td>
+                                        <td>{mockedOrder.status}</td>
+                                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                                        <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
+                                    </div>
+                                </tr>
+                            )}
                         </table>
                     </aside>
 
@@ -107,17 +130,17 @@ const DashboardComponent = () => {
 
 axios.get('/orders')
 
-  .then(function (response) {
-  
-  })
+    .then(function (response) {
 
-  .catch(function (error) {
-    console.log(error);
-  })
+    })
 
-  .then(function () {
+    .catch(function (error) {
+        console.log(error);
+    })
 
-  });
+    .then(function () {
+
+    });
 
 
 export default DashboardComponent
