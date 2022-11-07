@@ -30,6 +30,7 @@ export const Container = styled.section`
                         display: inline-block;
                         margin: 0.5rem;
                     }
+
                 }
             }
         }
@@ -45,6 +46,7 @@ export const Container = styled.section`
 
             table{
                 tr{
+
                     th{
                         display: inline-block;
                         margin: 1rem;
@@ -53,6 +55,18 @@ export const Container = styled.section`
                     td{
                         display: inline-block;
                         margin: 0.5rem;
+                    }
+
+                    div{
+                        background-color: #D9D9D9;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 2px 0px rgba(0, 0, 0,0.2);
+                        margin: 0.5%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        
+        
                     }
                 }
             }
@@ -68,6 +82,7 @@ export const Container = styled.section`
 
 
             table{
+
                 tr{
                     th{
                         display: inline-block;
@@ -77,6 +92,18 @@ export const Container = styled.section`
                     td{
                         display: inline-block;
                         margin: 0.5rem;
+                    }
+
+                    div{
+                        background-color: #D9D9D9;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 2px 0px rgba(0, 0, 0,0.2);
+                        margin: 0.5%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        
+        
                     }
                 }
             }
