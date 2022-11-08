@@ -25,7 +25,7 @@ const DashboardComponent = () => {
                             <th>Atrasados:</th>
                             <th>Negados:</th>
                         </tr>
-
+                     
                         <tr>
                             <td>460 (46%)</td>
                             <td>400 (40%)</td>
@@ -44,6 +44,7 @@ const DashboardComponent = () => {
                             <thead>
                                 <th>Prazos mais próximos:</th>
                             </thead>
+                            <hr/>
 
                             {mockedClosestOrders.map((mockedOrder, index) =>
 
@@ -51,6 +52,7 @@ const DashboardComponent = () => {
                                     <div>
                                         <td>#{mockedOrder.id}</td>
                                         <td>{mockedOrder.status}</td>
+                                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                         <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     </div>
                                 </tr>
@@ -63,6 +65,7 @@ const DashboardComponent = () => {
                             <thead>
                                 <th>Em transporte:</th>
                             </thead>
+                            <hr/>
 
                             {mockedInTransportationOrders.map((mockedOrder, index) =>
 
@@ -85,6 +88,7 @@ const DashboardComponent = () => {
                             <thead>
                                 <th>Pedidos Mais Recentes:</th>
                             </thead>
+                            <hr/>
 
                             {mockedNewerOrders.map((mockedOrder, index) =>
 
@@ -105,6 +109,7 @@ const DashboardComponent = () => {
                             <thead>
                                 <th>Atrasados</th>
                             </thead>
+                            <hr/>
 
                             {mockedLateOrders.map((mockedOrder, index) =>
                                 <tr key={index}>

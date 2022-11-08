@@ -2,9 +2,14 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     .dashboard{
-        width: 88.5%;
+        width: 97%;
         height: auto;
         margin: 0;
+
+        hr{
+            color: #000;
+            border: 0.3 rem;
+        }
 
         .rowOfItems{
             display: flex;
@@ -12,14 +17,16 @@ export const Container = styled.section`
         }
 
         .upperItem{
-            width: 99%;
+            
+            width: 99.1%;
             height: auto;
             background-color: #FFF;
             border-radius: 8px;
-            margin: 0.3rem;
+            margin: 0.3rem 0.3rem 0.7rem 0.3rem;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
 
             table{
+        
                 tr{
                     th{
                         display: inline-block;
@@ -37,11 +44,11 @@ export const Container = styled.section`
 
 
         .leftBiggerItem{
-            width: 70%;
+            width: 65%;
             height: 18rem;
             background-color: #FFF;
             border-radius: 8px;
-            margin: 0.3rem 0.7rem 0.3rem 0.5rem;
+            margin: 0.3rem 0.3rem 0.7rem 0.3rem;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
 
             table{
@@ -73,11 +80,11 @@ export const Container = styled.section`
         }
 
         .rightSmallerItem{
-            width: 30%;
+            width: 35%;
             height: 18rem;
             background-color: #FFF;
             border-radius: 8px;
-            margin: 0.3rem 0.7rem 0.3rem 0.5rem;
+            margin: 0.3rem 0.3rem 0.7rem 0.3rem;
             box-shadow: 0 5px 5px 0px rgba(0, 0, 0,0.2);
 
 

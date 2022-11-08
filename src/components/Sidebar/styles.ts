@@ -19,7 +19,7 @@ export const Sidebar = styled.aside`
         text-align: center;
         
         a{
-            text-decoration: none;           
+            text-decoration: none;          
         }
 
         p{
@@ -27,4 +27,6 @@ export const Sidebar = styled.aside`
         }
 
     }
+
+   
 `
