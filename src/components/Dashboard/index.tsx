@@ -25,7 +25,7 @@ const DashboardComponent = () => {
                             <th>Atrasados:</th>
                             <th>Negados:</th>
                         </tr>
-                     
+
                         <tr>
                             <td>460 (46%)</td>
                             <td>400 (40%)</td>
@@ -40,11 +40,22 @@ const DashboardComponent = () => {
                 <section className='rowOfItems'>
 
                     <section className='leftBiggerItem'>
+
                         <table>
-                            <thead>
-                                <th>Prazos mais próximos:</th>
-                            </thead>
-                            <hr/>
+                            <tr>
+                                <th>Prazos proximos</th>
+                            </tr>
+
+                            <hr />
+
+                            <tr>
+                                <thead>
+                                <th>ID</th>
+                                    <th>Status</th>
+                                    <th>Entrada</th>
+                                    <th>Entrega</th>
+                                </thead>
+                            </tr>
 
                             {mockedClosestOrders.map((mockedOrder, index) =>
 
@@ -62,10 +73,20 @@ const DashboardComponent = () => {
 
                     <aside className="rightSmallerItem">
                         <table>
-                            <thead>
-                                <th>Em transporte:</th>
-                            </thead>
-                            <hr/>
+                            <tr>
+                                <th>Prazos proximos</th>
+                            </tr>
+
+                            <hr />
+
+                            <tr>
+                                <thead>
+                                <th>ID</th>
+                                    <th>Status</th>
+                                    <th>Entrada</th>
+                                    <th>Entrega</th>
+                                </thead>
+                            </tr>
 
                             {mockedInTransportationOrders.map((mockedOrder, index) =>
 
@@ -85,10 +106,20 @@ const DashboardComponent = () => {
                 <section className='rowOfItems'>
                     <section className='leftBiggerItem'>
                         <table>
-                            <thead>
-                                <th>Pedidos Mais Recentes:</th>
-                            </thead>
-                            <hr/>
+                            <tr>
+                                <th>Prazos proximos</th>
+                            </tr>
+
+                            <hr />
+
+                            <tr>
+                                <thead>
+                                    <th>ID</th>
+                                    <th>Status</th>
+                                    <th>Entrada</th>
+                                    <th>Entrega</th>
+                                </thead>
+                            </tr>
 
                             {mockedNewerOrders.map((mockedOrder, index) =>
 
@@ -106,10 +137,20 @@ const DashboardComponent = () => {
 
                     <aside className="rightSmallerItem">
                         <table>
-                            <thead>
-                                <th>Atrasados</th>
-                            </thead>
-                            <hr/>
+                            <tr>
+                                <th>Prazos proximos</th>
+                            </tr>
+
+                            <hr />
+
+                            <tr>
+                                <thead>
+                                <th>ID</th>
+                                    <th>Status</th>
+                                    <th>Entrada</th>
+                                    <th>Entrega</th>
+                                </thead>
+                            </tr>
 
                             {mockedLateOrders.map((mockedOrder, index) =>
                                 <tr key={index}>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     .dashboard{
-        width: 97%;
+        width: 98%;
         height: auto;
         margin: 0;
 
@@ -24,18 +24,30 @@ export const Container = styled.section`
             border-radius: 8px;
             margin: 0.3rem 0.3rem 0.7rem 0.3rem;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
+            padding: 0;
+            display: flex;
+            justify-content: center;
 
             table{
+                width: 48rem;
         
                 tr{
+                    width: 48rem;
+                    display: flex;
+                    justify-content: space-around;
+
                     th{
                         display: inline-block;
-                        margin: 1rem;
+                        margin: 0.5rem;
+                        width: 8rem;
+                        text-align: center;
                     }
         
                     td{
                         display: inline-block;
                         margin: 0.5rem;
+                        width: 8rem;
+                        text-align: center;
                     }
 
                 }
@@ -50,18 +62,42 @@ export const Container = styled.section`
             border-radius: 8px;
             margin: 0.3rem 0.3rem 0.7rem 0.3rem;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
 
             table{
-                tr{
+
+                tr:first-child{
 
                     th{
+                        width: 20rem;
                         display: inline-block;
-                        margin: 1rem;
+                        margin: 0.5rem 2rem;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                }
+
+                tr{
+                    width: 48rem;
+                    display: flex;
+                    justify-content: space-around;
+
+                    th{
+                        width: 8rem;
+                        display: inline-block;
+                        margin: 0.3rem 2rem;
+                        text-align: center;
+                        font-size: 13px;
                     }
         
                     td{
+                        width: 8rem;
                         display: inline-block;
                         margin: 0.5rem;
+                        text-align: center;
+                        font-size: 12px;
                     }
 
                     div{
@@ -85,20 +121,41 @@ export const Container = styled.section`
             background-color: #FFF;
             border-radius: 8px;
             margin: 0.3rem 0.3rem 0.7rem 0.3rem;
-            box-shadow: 0 5px 5px 0px rgba(0, 0, 0,0.2);
+            box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
 
 
             table{
 
-                tr{
+                tr:first-child{
+
                     th{
+                        width: 20rem;
                         display: inline-block;
-                        margin: 1rem;
+                        margin: 0.5rem 2rem;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                }
+
+                tr{
+                    width: 26rem;
+                    display: flex;
+                    justify-content: space-around;
+
+                    th{
+                        width: 2.5rem;
+                        display: inline-block;
+                        margin: 0.3rem 2rem;
+                        text-align: center;
+                        font-size: 12px;
                     }
         
                     td{
+                        width: 8rem;
                         display: inline-block;
                         margin: 0.5rem;
+                        text-align: center;
+                        font-size: 12px;
                     }
 
                     div{

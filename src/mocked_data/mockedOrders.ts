@@ -20,7 +20,7 @@ const mockedOrders: {
             id: 2444,
             name: "Johnson",
             email: "johnson@email.com",
-            status: "Aguardando antifraude",
+            status: "No Antifraude",
             dateOfDeliveryDeadline: new Date(2022, 10, 20,),
             dateOfEnter: new Date(2022, 10, 12, ),
             products: [
@@ -39,7 +39,7 @@ const mockedOrders: {
             id: 2445,
             name: "Peter",
             email: "peter@email.com",
-            status: "Pedido em processamento",
+            status: "Em processamento",
             dateOfDeliveryDeadline: new Date(2022, 10, 20),
             dateOfEnter: new Date(2022, 10, 12, 14),
             products: [
