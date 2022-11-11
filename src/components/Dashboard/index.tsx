@@ -43,14 +43,14 @@ const DashboardComponent = () => {
 
                         <table>
                             <tr>
-                                <th>Prazos proximos</th>
+                                <th>Prazos Próximos</th>
                             </tr>
 
                             <hr />
 
                             <tr>
                                 <thead>
-                                <th>ID</th>
+                                    <th>ID</th>
                                     <th>Status</th>
                                     <th>Entrada</th>
                                     <th>Entrega</th>
@@ -74,16 +74,15 @@ const DashboardComponent = () => {
                     <aside className="rightSmallerItem">
                         <table>
                             <tr>
-                                <th>Prazos proximos</th>
+                                <th>Em Transporte</th>
                             </tr>
 
                             <hr />
 
                             <tr>
                                 <thead>
-                                <th>ID</th>
+                                    <th>ID</th>
                                     <th>Status</th>
-                                    <th>Entrada</th>
                                     <th>Entrega</th>
                                 </thead>
                             </tr>
@@ -94,7 +93,6 @@ const DashboardComponent = () => {
                                     <div>
                                         <td>#{mockedOrder.id}</td>
                                         <td>{mockedOrder.status}</td>
-                                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                         <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     </div>
                                 </tr>
@@ -107,7 +105,7 @@ const DashboardComponent = () => {
                     <section className='leftBiggerItem'>
                         <table>
                             <tr>
-                                <th>Prazos proximos</th>
+                                <th>Pedidos Recentes</th>
                             </tr>
 
                             <hr />
@@ -138,16 +136,15 @@ const DashboardComponent = () => {
                     <aside className="rightSmallerItem">
                         <table>
                             <tr>
-                                <th>Prazos proximos</th>
+                                <th>Pedidos Atrasados</th>
                             </tr>
 
                             <hr />
 
                             <tr>
                                 <thead>
-                                <th>ID</th>
+                                    <th>ID</th>
                                     <th>Status</th>
-                                    <th>Entrada</th>
                                     <th>Entrega</th>
                                 </thead>
                             </tr>
@@ -157,7 +154,6 @@ const DashboardComponent = () => {
                                     <div>
                                         <td>#{mockedOrder.id}</td>
                                         <td>{mockedOrder.status}</td>
-                                        <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                         <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     </div>
                                 </tr>

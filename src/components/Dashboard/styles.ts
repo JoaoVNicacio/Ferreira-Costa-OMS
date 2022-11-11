@@ -14,15 +14,17 @@ export const Container = styled.section`
         .rowOfItems{
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            width: 100.9%;
         }
 
         .upperItem{
             
-            width: 99.1%;
+            width: 99.5%;
             height: auto;
             background-color: #FFF;
             border-radius: 8px;
-            margin: 0.3rem 0.3rem 0.7rem 0.3rem;
+            margin: 0.7% 0.7% 0.7% 0.7%;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
             padding: 0;
             display: flex;
@@ -56,15 +58,16 @@ export const Container = styled.section`
 
 
         .leftBiggerItem{
-            width: 65%;
+            width: 75%;
             height: 18rem;
             background-color: #FFF;
             border-radius: 8px;
-            margin: 0.3rem 0.3rem 0.7rem 0.3rem;
+            margin: 0.7% 0.7% 0.7% 0.7%;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
+            overflow-y: scroll;
             display: flex;
             justify-content: center;
-            flex-direction: column;
+
 
             table{
 
@@ -80,16 +83,16 @@ export const Container = styled.section`
                 }
 
                 tr{
-                    width: 48rem;
+                    width: 46rem;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
 
                     th{
-                        width: 8rem;
+                        width: 11rem;
                         display: inline-block;
-                        margin: 0.3rem 2rem;
+                        margin: 0.5rem 0.2rem;
                         text-align: center;
-                        font-size: 13px;
+                        font-size: 12px;
                     }
         
                     td{
@@ -101,7 +104,8 @@ export const Container = styled.section`
                     }
 
                     div{
-                        background-color: #D9D9D9;
+                        background-color: #F9F6F6;
+                        border: solid 1px;
                         border-radius: 8px;
                         box-shadow: 0 2px 2px 0px rgba(0, 0, 0,0.2);
                         margin: 0.5%;
@@ -116,12 +120,15 @@ export const Container = styled.section`
         }
 
         .rightSmallerItem{
-            width: 35%;
+            width: 38%;
             height: 18rem;
             background-color: #FFF;
             border-radius: 8px;
-            margin: 0.3rem 0.3rem 0.7rem 0.3rem;
+            margin: 0.7% 0.7% 0.7% 0.7%;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
+            overflow-y: scroll;
+            display: flex;
+            justify-content: center;
 
 
             table{
@@ -138,9 +145,9 @@ export const Container = styled.section`
                 }
 
                 tr{
-                    width: 26rem;
+                    width: 22rem;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
 
                     th{
                         width: 2.5rem;
@@ -151,7 +158,7 @@ export const Container = styled.section`
                     }
         
                     td{
-                        width: 8rem;
+                        width: 6rem;
                         display: inline-block;
                         margin: 0.5rem;
                         text-align: center;
@@ -159,7 +166,8 @@ export const Container = styled.section`
                     }
 
                     div{
-                        background-color: #D9D9D9;
+                        background-color: #F9F6F6;
+                        border: solid 1px;
                         border-radius: 8px;
                         box-shadow: 0 2px 2px 0px rgba(0, 0, 0,0.2);
                         margin: 0.5%;
