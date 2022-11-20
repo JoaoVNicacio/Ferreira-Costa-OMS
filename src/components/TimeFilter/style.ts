@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const TimeFilter = styled.div`
     width: 20vw;
-    height: 15vh;
+    height: 10vh;
     padding: 1rem;
     position: relative;
     user-select: none;
@@ -14,13 +14,17 @@ export const TimeFilter = styled.div`
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
     }
 
     .dropdown-content{
         position: absolute;
-        padding: 15px;
+        padding: 5px;
         background-color: #fff;
         width: 90.2%;
+        border-radius: 8px;
+        box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
     }
 
     .dropdown-item{
@@ -30,6 +34,7 @@ export const TimeFilter = styled.div`
 
         &:hover{
             background-color: #f4f4f4;
+            border-radius: 8px;
         }
     }
 

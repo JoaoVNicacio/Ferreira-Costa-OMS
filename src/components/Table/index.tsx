@@ -1,5 +1,4 @@
 import { OrderTable } from './styles'
-import axios from 'axios'
 import mockedOrders from '../../mocked_data/mockedOrders'
 
 const TableComponent = () => {
@@ -42,20 +41,6 @@ const TableComponent = () => {
     )
 
 }
-
-axios.get('/orders')
-
-    .then(function (response) {
-
-    })
-
-    .catch(function (error) {
-        console.log(error);
-    })
-
-    .then(function () {
-
-    });
 
 
 export default TableComponent

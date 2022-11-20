@@ -24,7 +24,7 @@ export const Container = styled.section`
             height: auto;
             background-color: #FFF;
             border-radius: 8px;
-            margin: 0.7% 0.7% 0.7% 0.7%;
+            margin: 0 0.7% 0.7% 0.7%;
             box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
             padding: 0;
             display: flex;

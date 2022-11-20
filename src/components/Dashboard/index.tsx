@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container } from './styles'
-import axios from 'axios'
 import mockedNewerOrders from '../../mocked_data/mockedOrders'
 import mockedLateOrders from '../../mocked_data/mockedLateOrders'
 import mockedInTransportationOrders from '../../mocked_data/mockedInTransportationOrders'
@@ -169,20 +168,5 @@ const DashboardComponent = () => {
     )
 
 }
-
-axios.get('/orders')
-
-    .then(function (response) {
-
-    })
-
-    .catch(function (error) {
-        console.log(error);
-    })
-
-    .then(function () {
-
-    });
-
 
 export default DashboardComponent

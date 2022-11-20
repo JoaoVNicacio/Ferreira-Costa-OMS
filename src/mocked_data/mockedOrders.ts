@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 const mockedOrders: {
 
     id: number,
@@ -91,6 +93,22 @@ const mockedOrders: {
             dateOfDelivery: 0,
             commentary: ""
         },
-    ]
+    ];
+
+
+    axios.get('/orders')
+
+    .then(function (response) {
+
+    })
+
+    .catch(function (error) {
+        console.log(error);
+    })
+
+    .then(function () {
+
+    })
+
 
 export default mockedOrders
