@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <GlobalStyles/>
-      <Pedidos/>
+      <HomePage/>
     </div>
   )
 
