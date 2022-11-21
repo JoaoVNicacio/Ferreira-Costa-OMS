@@ -1,9 +1,8 @@
 import styled, { withTheme } from 'styled-components'
 
-const Wrapper = styled.div`
+export const WrapperHome = styled.div`
     height: 100vh;
     width: 100%;
-    display: flex;
 
     display: grid;
     grid-template-columns: 1fr 8fr;
@@ -29,4 +28,10 @@ const Wrapper = styled.div`
     }
 `
 
-export default Wrapper
+export const WrapperLogin = styled.div`
+    height: 100vh;
+    width: 100%;
+    background-color: #AA0E27;
+
+    display: flex;
+`
