@@ -5,7 +5,7 @@ const LoginComponent = () => {
         <LoginField>
             <div className="textos">
                 <h1>SEJA BEM VINDO!</h1>
-                <p><strong>VAMOS COMEÇAR?</strong></p>
+                <p>VAMOS COMEÇAR?</p>
             </div>
             <div className="inputs">
                 <input type="text" placeholder='Identificador' />
