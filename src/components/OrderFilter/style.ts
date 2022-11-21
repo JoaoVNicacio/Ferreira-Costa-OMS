@@ -8,7 +8,7 @@ export const OrderFilter = styled.div`
     user-select: none;
 
     .dropdown-btn{
-        padding: 1rem;
+        padding: .5rem;
         background-color: #fff;
         display: flex;
         align-items: center;
