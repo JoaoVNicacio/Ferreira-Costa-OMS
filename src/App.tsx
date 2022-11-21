@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <GlobalStyles/>
-      <Login/>
+      <HomePage/>
     </div>
   )
 

@@ -6,7 +6,7 @@ export const WrapperHome = styled.div`
 
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: 10vw 75vw;
+    grid-template-rows: 5vw 75vw;
     overflow-y: hidden;
     overflow-x: hidden;
 

@@ -8,7 +8,7 @@ export const TimeFilter = styled.div`
     user-select: none;
 
     .dropdown-btn{
-        padding: 1rem;
+        padding: .5rem;
         background-color: #fff;
         display: flex;
         align-items: center;
@@ -22,7 +22,7 @@ export const TimeFilter = styled.div`
         position: absolute;
         padding: 5px;
         background-color: #fff;
-        width: 90.2%;
+        width: 35vh;
         border-radius: 8px;
         box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
     }
