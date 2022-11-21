@@ -32,6 +32,19 @@ export const WrapperLogin = styled.div`
     height: 100vh;
     width: 100%;
     background-color: #AA0E27;
-
+    gap: 5%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo{
+        margin-top: -350px;
+    }
+
+    .logo > p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 50px 20px 0 0;
+        text-align: right;
+    }
 `

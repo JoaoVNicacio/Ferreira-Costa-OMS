@@ -5,4 +5,11 @@ width: 650px;
 height: 650px;
 background-color: #FFF;
 border-radius: 20px;
+padding: 5%;
+
+.textos{
+
+}
+
+
 `
