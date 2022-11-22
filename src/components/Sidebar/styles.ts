@@ -22,11 +22,12 @@ export const Sidebar = styled.aside`
             text-decoration: none;          
         }
 
-        p{
+        li{
             color: #fff;
         }
 
+        li:first-child{
+            margin-bottom: 10%;
+        }
     }
-
-   
 `

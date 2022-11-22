@@ -1,4 +1,5 @@
 import {LoginField} from './style'
+import {Link} from 'react-router-dom'
 
 const LoginComponent = () => {
     return(
@@ -15,7 +16,7 @@ const LoginComponent = () => {
                 <a href="#">Esqueci minha senha</a>
                 <a href="#">Esqueci meu identificador</a>
             </div>
-            <button>Entrar</button>
+            <Link to="homepage"><button>Entrar</button></Link>
         </LoginField>
     )
 }
