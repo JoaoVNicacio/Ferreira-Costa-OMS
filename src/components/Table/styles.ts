@@ -18,9 +18,10 @@ export const OrderTable = styled.section`
         width: 90%;
 
         tr{
-            width: 72rem;
+            width: 76rem;
             display: flex;
             justify-content: center;
+            margin: 0;
 
             div{
                 background-color: #F9F6F6;
@@ -30,7 +31,7 @@ export const OrderTable = styled.section`
                 margin: 0.5%;
                 width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
 
                 button{
                     border-radius: 50%;
