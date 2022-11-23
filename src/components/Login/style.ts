@@ -39,7 +39,11 @@ padding: 5%;
     a{
         color: black;
         text-decoration: none;
-        font-size: .7rem;
+        font-size: .8rem;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
