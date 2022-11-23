@@ -2,7 +2,7 @@ import SidebarComponent from "../components/Sidebar"
 import * as W from '../styles/wrapper'
 import DashboardComponent from "../components/Dashboard"
 import Filter from "../components/Filter"
-import React, {useState} from 'react'
+import {useState} from 'react'
 
 export const HomePage = () => {
 
@@ -11,7 +11,7 @@ export const HomePage = () => {
     return (
         <W.WrapperHome>
             <SidebarComponent/>
-            <Filter selected={selected} setSelected={setSelected}/>
+            <Filter selected={selected} setSelected={setSelected} timeOptions={['Este mês(Novembro)', 'Último mês(Outubro)', 'Último trimestre', 'Último semestre', 'Último ano']} />
             <DashboardComponent/>
         </W.WrapperHome>
     )

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import SidebarComponent from "../components/Sidebar" 
 import Filter from "../components/Filter"
 import Table from '../components/Table'
@@ -11,7 +11,7 @@ export const Pedidos = () => {
     return (
         <W.WrapperHome>
             <SidebarComponent/>
-            <Filter selected={selected} setSelected={setSelected}/>
+            <Filter selected={selected} setSelected={setSelected} timeOptions={['Antifraude', 'Atrasados', 'Entregues', 'Em Processamento', 'Interrompidos', 'Negados']} />
             <Table/>
         </W.WrapperHome>
     )

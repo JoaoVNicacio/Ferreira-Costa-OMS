@@ -30,5 +30,6 @@ export const Sidebar = styled.aside`
         background-color: rgb(255, 255, 255, 0);
         border: none;
         cursor: pointer;
+        color: #fff;
     }
 `
