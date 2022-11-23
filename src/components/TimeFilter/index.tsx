@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { TimeFilter } from "./style"
 
-const TimeFilterComponent: any = ({ selected, setSelected }: any) => {
+const Filter: any = ({ selected, setSelected }: any) => {
 
     const [isActive, setIsActive] = useState(false);
     const options = ['Este mês(Novembro)', 'Último mês(Outubro)', 'Último trimestre', 'Último semestre', 'Último ano']
@@ -27,4 +27,4 @@ const TimeFilterComponent: any = ({ selected, setSelected }: any) => {
     )
 }
 
-export default TimeFilterComponent
+export default Filter
