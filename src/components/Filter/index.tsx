@@ -4,13 +4,12 @@ import { TimeFilter } from "./style"
 type Props = {
     selected: string
     setSelected: React.Dispatch<React.SetStateAction<string>>
-    timeOptions: string[] 
+    options: string[] 
 }
 
-const Filter: any = ({ selected, setSelected,  timeOptions}: Props) => {
+const Filter: any = ({ selected, setSelected,  options}: Props) => {
 
     const [isActive, setIsActive] = useState(false);
-    const options = timeOptions
 
     return (
         <TimeFilter>
