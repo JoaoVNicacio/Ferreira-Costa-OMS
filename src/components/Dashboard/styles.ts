@@ -15,7 +15,7 @@ export const Container = styled.section`
             display: flex;
             flex-direction: row;
             justify-content: center;
-            width: 100.9%;
+            width: 100%;
         }
 
         .upperItem{
@@ -83,7 +83,7 @@ export const Container = styled.section`
                 }
 
                 tr{
-                    width: 46rem;
+                    width: auto;
                     display: flex;
                     justify-content: center;
 
@@ -181,4 +181,5 @@ export const Container = styled.section`
             }
         }
     }
+
 `
