@@ -11,7 +11,7 @@ export const HomePage = () => {
     return (
         <W.WrapperHome>
             <SidebarComponent/>
-            <Filter selected={selected} setSelected={setSelected} timeOptions={['Este mês(Novembro)', 'Último mês(Outubro)', 'Último trimestre', 'Último semestre', 'Último ano']} />
+            <Filter selected={selected} setSelected={setSelected} options={['Este mês(Novembro)', 'Último mês(Outubro)', 'Último trimestre', 'Último semestre', 'Último ano']} />
             <DashboardComponent/>
         </W.WrapperHome>
     )

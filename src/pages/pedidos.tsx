@@ -11,7 +11,7 @@ export const Pedidos = () => {
     return (
         <W.WrapperHome>
             <SidebarComponent/>
-            <Filter selected={selected} setSelected={setSelected} timeOptions={['Antifraude', 'Atrasados', 'Entregues', 'Em Processamento', 'Interrompidos', 'Negados']} />
+            <Filter selected={selected} setSelected={setSelected} options={['Antifraude', 'Atrasados', 'Entregues', 'Em Processamento', 'Interrompidos', 'Negados']} />
             <Table/>
         </W.WrapperHome>
     )

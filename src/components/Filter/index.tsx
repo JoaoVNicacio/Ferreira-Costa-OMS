@@ -10,6 +10,7 @@ type Props = {
 const Filter: any = ({ selected, setSelected,  options}: Props) => {
 
     const [isActive, setIsActive] = useState(false);
+    
 
     return (
         <TimeFilter>

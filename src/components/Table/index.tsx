@@ -28,7 +28,7 @@ const TableComponent = () => {
                             <td>{mockedOrder.status}</td>
                             <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                             <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
-                            <button>+</button>
+                            <button></button>
                         </div>
                     </tr>
 
@@ -41,6 +41,5 @@ const TableComponent = () => {
     )
 
 }
-
 
 export default TableComponent

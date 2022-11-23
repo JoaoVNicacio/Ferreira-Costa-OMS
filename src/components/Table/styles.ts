@@ -18,7 +18,7 @@ export const OrderTable = styled.section`
         width: 90%;
 
         tr{
-            width: 76rem;
+            width: 90rem;
             display: flex;
             justify-content: center;
             margin: 0;
@@ -34,10 +34,12 @@ export const OrderTable = styled.section`
                 justify-content: center;
 
                 button{
+                    background-color: #D9D9D9;
+                    margin: auto auto;
                     border-radius: 50%;
-                    border: 0;
-                    width: 20px;
-                    height: 20px;
+                    border: none;
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
@@ -49,7 +51,6 @@ export const OrderTable = styled.section`
             }
 
             td{
-
                 display: inline-block;
                 margin: 0.5rem;
                 width: 14rem;
@@ -60,7 +61,6 @@ export const OrderTable = styled.section`
         tr:first-child {
             background-color: #FFF;
         }
-
     }
     
 `
