@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const LoginField = styled.div`
 width: 650px;
 height: 650px;
+display: flex;
+flex-direction: column;
 background-color: #FFF;
 border-radius: 20px;
 padding: 5%;
@@ -41,14 +43,19 @@ padding: 5%;
     }
 }
 
-button{
-    width: 200px;
-    height: 35px;
-    background-color: #7AC143;
-    color: #FFF;
-    border: none;
-    border-radius: 10px;
-    margin-top: 10%;
-    margin-left: 30%;
+.link{
+    display: inline;
+    margin: 10% auto 0 auto;
+
+    button{
+        width: 200px;
+        height: 35px;
+        background-color: #7AC143;
+        color: #FFF;
+        border: none;
+        border-radius: 10px;
+        margin: 10% auto;
+    }
 }
+
 `

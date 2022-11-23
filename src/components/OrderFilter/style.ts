@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const OrderFilter = styled.div`
     width: 20vw;
-    height: 15vh;
+    height: 10vh;
     padding: 1rem;
     position: relative;
     user-select: none;
