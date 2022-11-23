@@ -7,12 +7,19 @@ import {Sidebar} from './styles'
 const SidebarComponent = () => {
     return (
         <Sidebar>
-            <img src={logo} alt="logo da ferreira costa" className='icon' />
-            
-            <ul className='links'>
-                <Link to="/homepage"><li>Dashboard</li></Link>
-                <Link to="/pedidos"><li>Pedidos</li></Link>
-            </ul>
+            <div>
+                <img src={logo} alt="logo da ferreira costa" />
+                
+                <ul>
+                    <Link to="/homepage"><li><button>Dashboard</button></li></Link>
+                    <hr />
+                    <Link to="/pedidos"><li><button>Pedidos</button></li></Link>
+                </ul>
+            </div>
+
+            <div>
+                <Link to="/"><button>Logout</button></Link>
+            </div>
         </Sidebar>
     )
 }

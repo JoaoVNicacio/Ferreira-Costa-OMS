@@ -59,6 +59,7 @@ padding: 5%;
         border: none;
         border-radius: 10px;
         margin: 10% auto;
+        cursor: pointer;
     }
 }
 
