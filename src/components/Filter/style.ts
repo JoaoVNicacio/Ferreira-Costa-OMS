@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const TimeFilter = styled.div`
     width: 20vw;
     height: 10vh;
-    padding: 1rem;
+    margin-left: 0.7%;
+    margin-top: 0.7%;
     position: relative;
     user-select: none;
 
@@ -22,7 +23,7 @@ export const TimeFilter = styled.div`
         position: absolute;
         padding: 5px;
         background-color: #fff;
-        width: 35vh;
+        width: 90%;
         border-radius: 8px;
         box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
     }
@@ -37,4 +38,6 @@ export const TimeFilter = styled.div`
             border-radius: 8px;
         }
     }
+
+
 `

@@ -1,4 +1,4 @@
-import styled, { withTheme } from 'styled-components'
+import styled from 'styled-components'
 
 export const WrapperHome = styled.div`
     height: 100vh;
@@ -46,6 +46,14 @@ export const WrapperLogin = styled.div`
         font-size: 1.5rem;
         margin: 50px 20px 0 0;
         text-align: right;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1280px){
+        flex-direction: column-reverse;
+
+        .logo{
+            margin: 0;
+        }
     }
 `
 
