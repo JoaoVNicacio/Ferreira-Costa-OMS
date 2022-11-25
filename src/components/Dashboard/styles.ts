@@ -61,6 +61,7 @@ export const Container = styled.section`
                 box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
                 display: flex;
                 justify-content: center;
+                overflow-y: scroll;
 
                 table {
                     width: 100%;
@@ -126,6 +127,7 @@ export const Container = styled.section`
                 box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
                 display: flex;
                 justify-content: center;
+                overflow-y: scroll;
 
                 table {
                     width: 100%;
