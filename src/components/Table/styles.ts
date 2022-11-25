@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const OrderTable = styled.section`
 
-    height: 30rem;
+    height: 80vh;
     width: 98%;
     background-color: #FFF;
     border-radius: 8px;
@@ -24,7 +24,7 @@ export const OrderTable = styled.section`
 
             th{
                 margin: 0.5rem;
-                width: 10%;
+                width: 13%;
                 text-align: center;
             }
 
@@ -37,6 +37,7 @@ export const OrderTable = styled.section`
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                gap: 10px;
 
                 button{
                     background-color: #D9D9D9;
@@ -48,8 +49,12 @@ export const OrderTable = styled.section`
 
                 td{
                     margin: 0.5rem;
-                    width: 10%;
+                    width: 13%;
                     text-align: center;
+                }
+
+                td:nth-child(3){
+                    word-break: break-all;
                 }
             }
 
