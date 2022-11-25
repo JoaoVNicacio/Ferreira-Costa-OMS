@@ -2,60 +2,57 @@ import styled from 'styled-components'
 
 export const OrderTable = styled.section`
 
-    height: auto;
+    height: 30rem;
     width: 98%;
     background-color: #FFF;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
-    height: 75%;
     margin: 0.7% 0.7% 0.7% 0.7%;
     overflow-y: scroll;
     display: flex;
     justify-content: center;
 
     table{
-        width: 90%;
+        width: 100%;
+        padding: 1%;
 
         tr{
-            width: 90rem;
+            width: auto;
             display: flex;
-            justify-content: center;
-            margin: 0;
+            justify-content: space-between;
+
+            th{
+                margin: 0.5rem;
+                width: 10%;
+                text-align: center;
+            }
 
             div{
                 background-color: #F9F6F6;
-                border: solid 1px;
+                border: 1px solid;
                 border-radius: 8px;
                 box-shadow: 0 2px 2px 0px rgba(0, 0, 0,0.2);
                 margin: 0.5%;
                 width: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
 
                 button{
                     background-color: #D9D9D9;
-                    margin: auto auto;
                     border-radius: 50%;
                     border: none;
                     width: 30px;
                     height: 30px;
                 }
+
+                td{
+                    margin: 0.5rem;
+                    width: 10%;
+                    text-align: center;
+                }
             }
 
-            th{
-                display: inline-block;
-                margin: 0.5rem;
-                width: 14rem;
-                text-align: center;
-            }
-
-            td{
-                display: inline-block;
-                margin: 0.5rem;
-                width: 14rem;
-                text-align: center;
-            }
         }
 
         tr:first-child {
