@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const OrderTable = styled.section`
 
-    height: 80vh;
+    height: 85vh;
     width: 98%;
     background-color: #FFF;
     border-radius: 8px;
