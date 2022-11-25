@@ -8,7 +8,6 @@ export const Container = styled.section`
 
         hr {
             color: #000;
-            border: 0.3 rem;
         }
 
         .upperItem {
@@ -32,7 +31,7 @@ export const Container = styled.section`
                     th {
                         display: inline-block;
                         margin: 0.5rem;
-                        width: 8rem;
+                        width: 20%;
                         text-align: center;
                     }
 
@@ -54,8 +53,8 @@ export const Container = styled.section`
             width: 100%;
 
             .leftBiggerItem {
-                width: 75%;
-                height: 18rem;
+                width: 60%;
+                height: 35vh;
                 background-color: #fff;
                 border-radius: 8px;
                 margin: 0.7% 0 0 0;
@@ -64,12 +63,14 @@ export const Container = styled.section`
                 justify-content: center;
 
                 table {
-                    
+                    width: 100%;
+                    padding: 7px;
+
                     tr:first-child {
                             th {
                                 width: 20rem;
                                 display: inline-block;
-                                margin: 0.5rem 2rem;
+                                margin: 1rem 2rem;
                                 text-align: center;
                                 font-size: 14px;
                             }
@@ -81,18 +82,21 @@ export const Container = styled.section`
                         justify-content: center;
 
                         thead{
-                            
+                            width: 100%;
+                            margin: 1% 0;
+                            display: flex;
+                            justify-content: space-between;
                         }
 
                         th {
-                            width: 11rem;
+                            width: 50%;
                             margin: 0.5rem 0.2rem;
                             text-align: center;
                             font-size: 12px;
                         }
 
                         td {
-                            width: 8rem;
+                            width: 50%;
                             display: inline-block;
                             margin: 0.5rem;
                             text-align: center;
@@ -114,42 +118,50 @@ export const Container = styled.section`
             }
 
             .rightSmallerItem {
-                width: 38%;
-                height: 18rem;
+                width: 40%;
+                height: 35vh;
                 background-color: #fff;
                 border-radius: 8px;
-                margin: 0.7% 0.7% 0.7% 0.7%;
+                margin: 0.7%;
                 box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
-
                 display: flex;
                 justify-content: center;
 
                 table {
+                    width: 100%;
+                    padding: 7px;
+
                     tr:first-child {
                         th {
                             width: 20rem;
                             display: inline-block;
-                            margin: 0.5rem 2rem;
+                            margin: 1rem 2rem;
                             text-align: center;
                             font-size: 14px;
                         }
                     }
 
                     tr {
-                        width: 22rem;
+                        width: auto;
                         display: flex;
                         justify-content: center;
 
+                        thead{
+                            width: 100%;
+                            margin: 1% 0;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
                         th {
-                            width: 2.5rem;
-                            display: inline-block;
-                            margin: 0.3rem 2rem;
+                            width: 50%;
+                            margin: 0.5rem 2rem;
                             text-align: center;
                             font-size: 12px;
                         }
 
                         td {
-                            width: 6rem;
+                            width: 50%;
                             display: inline-block;
                             margin: 0.5rem;
                             text-align: center;

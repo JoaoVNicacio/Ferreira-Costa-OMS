@@ -12,12 +12,10 @@ const DashboardComponent = () => {
     return (
 
         <Container>
-
             <section className='dashboard'>
-
                 <section className='upperItem'>
-
                     <table>
+
                         <tr>
                             <th>A ser entregue:</th>
                             <th>Entregue:</th>
@@ -31,16 +29,14 @@ const DashboardComponent = () => {
                             <td>50 (5%)</td>
                             <td>90 (9%)</td>
                         </tr>
-                    </table>
 
+                    </table>
                 </section>
 
-
                 <section className='rowOfItems'>
-
                     <section className='leftBiggerItem'>
-
                         <table>
+
                             <tr>
                                 <th>Prazos Próximos</th>
                             </tr>
@@ -67,11 +63,13 @@ const DashboardComponent = () => {
                                     </div>
                                 </tr>
                             )}
+
                         </table>
                     </section>
 
                     <aside className="rightSmallerItem">
                         <table>
+
                             <tr>
                                 <th>Em Transporte</th>
                             </tr>
@@ -96,6 +94,7 @@ const DashboardComponent = () => {
                                     </div>
                                 </tr>
                             )}
+
                         </table>
                     </aside>
                 </section>
@@ -103,6 +102,7 @@ const DashboardComponent = () => {
                 <section className='rowOfItems'>
                     <section className='leftBiggerItem'>
                         <table>
+
                             <tr>
                                 <th>Pedidos Recentes</th>
                             </tr>
@@ -119,7 +119,6 @@ const DashboardComponent = () => {
                             </tr>
 
                             {mockedNewerOrders.map((mockedOrder, index) =>
-
                                 <tr key={index}>
                                     <div>
                                         <td>#{mockedOrder.id}</td>
@@ -129,11 +128,13 @@ const DashboardComponent = () => {
                                     </div>
                                 </tr>
                             )}
+
                         </table>
                     </section>
 
                     <aside className="rightSmallerItem">
                         <table>
+
                             <tr>
                                 <th>Pedidos Atrasados</th>
                             </tr>
@@ -157,16 +158,13 @@ const DashboardComponent = () => {
                                     </div>
                                 </tr>
                             )}
+
                         </table>
                     </aside>
-
                 </section>
-
             </section>
-
         </Container>
     )
-
 }
 
 export default DashboardComponent
