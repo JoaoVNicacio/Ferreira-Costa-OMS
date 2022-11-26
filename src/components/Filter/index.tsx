@@ -26,7 +26,6 @@ const Filter: any = ({ selected, setSelected,  options}: Props) => {
                             {option}
                         </div>
                     ))}
-
                 </div>
             )}
         </TimeFilter>

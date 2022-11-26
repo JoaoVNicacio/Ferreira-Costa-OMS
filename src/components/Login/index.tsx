@@ -16,9 +16,7 @@ const LoginComponent = () => {
                 <a href="#">Esqueci minha senha</a>
                 <a href="#">Esqueci meu identificador</a>
             </div>
-            <div className="link">
-                <Link to="homepage"><button>Entrar</button></Link>
-            </div>
+                <Link to="homepage" className='link'><button>Entrar</button></Link>
         </LoginField>
     )
 }

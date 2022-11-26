@@ -31,7 +31,9 @@ const TableComponent = () => {
                                     <td>{mockedOrder.status}</td>
                                     <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
-                                    <td><button>▼</button></td>
+                                    <td>
+                                        <button>▼</button>
+                                    </td>
                                 </div>
                             </tr>
                     )}

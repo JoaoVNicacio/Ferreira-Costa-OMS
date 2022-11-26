@@ -48,7 +48,6 @@ export const LoginField = styled.div`
     }
 
     .link {
-        display: inline;
         margin: 10% auto 0 auto;
 
         button {
