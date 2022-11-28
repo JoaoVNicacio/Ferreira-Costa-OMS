@@ -1,12 +1,14 @@
+import {useState} from 'react'
 import { OrderTable } from './styles'
 import mockedOrders from '../../mocked_data/mockedOrders'
 
 const TableComponent = () => {
 
+    const [isActive, setIsActive] = useState(false);
+
     return (
 
         <OrderTable>
-
             <table>
                 <thead>
                     <tr>
@@ -32,19 +34,20 @@ const TableComponent = () => {
                                     <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     <td>
-                                        <button>▼</button>
+                                        <button onClick={e => setIsActive(!isActive)}>▼</button>
+                                        {isActive && (
+                                            <div className='dropdown-content'>
+                                                <a href="#">algo</a>
+                                            </div>
+                                        )}
                                     </td>
                                 </div>
                             </tr>
                     )}
                 </tbody>
-
             </table>
-
         </OrderTable>
-
     )
-
 }
 
 export default TableComponent

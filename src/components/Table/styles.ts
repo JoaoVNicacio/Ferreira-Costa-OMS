@@ -60,6 +60,33 @@ export const OrderTable = styled.section`
 
         }
 
+        tbody{
+            tr{
+                div{
+                    td:last-child{
+                        position: relative;
+                        display: inline-block;
+
+                        button{
+                            cursor: pointer;
+                        }
+
+                        div.dropdown-content{
+                            position: absolute;
+                            background-color: #f1f1f1;
+                            min-width: 160px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+
+                            a{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         tr:first-child {
             background-color: #FFF;
         }
