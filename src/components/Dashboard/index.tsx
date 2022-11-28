@@ -25,9 +25,9 @@ const DashboardComponent = () => {
 
                         <tr>
                             <td>460 (46%)</td>
-                            <td>400 (40%)</td>
-                            <td>50 (5%)</td>
-                            <td>90 (9%)</td>
+                            <td className='deliveredPct'>400 (40%)</td>
+                            <td className='delayedPct'>50 (5%)</td>
+                            <td className='deniedPct'>90 (9%)</td>
                         </tr>
 
                     </table>

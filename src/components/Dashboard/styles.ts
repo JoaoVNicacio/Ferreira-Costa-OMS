@@ -6,6 +6,18 @@ export const Container = styled.section`
         height: auto;
         margin: 0;
 
+        .deliveredPct{
+            color: #5A8F19;
+        }
+
+        .delayedPct{
+            color: #FFA800;
+        }
+
+        .deniedPct{
+            color: #AA0E27;   
+        }
+
         hr {
             color: #000;
         }
