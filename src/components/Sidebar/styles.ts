@@ -15,15 +15,24 @@ export const Sidebar = styled.aside`
         margin-top: 50%;
         list-style: none;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        a{
-            text-decoration: none;          
+
+        li :hover{
+            background-color: #E8273F;
+            width: 9rem;
+            border-radius: 4px;
         }
 
         li{
             color: #fff;
+            width: 9rem;
             margin: 10%;
         }
+
+
     }
 
     button{
@@ -32,4 +41,12 @@ export const Sidebar = styled.aside`
         cursor: pointer;
         color: #fff;
     }
+
+    button :hover{
+        background-color: #AA0E27;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+    }
+
 `

@@ -11,7 +11,7 @@ export const Container = styled.section`
         }
 
         .delayedPct{
-            color: #FFA800;
+            color: #ED6C16;
         }
 
         .deniedPct{
