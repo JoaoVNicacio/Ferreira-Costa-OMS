@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// Icones e Logo:
 import logo from '../../assets/images/ferreiraCosta-logo.png'
+import orders from '../../assets/images/shopping-bag.png'
+import dashboard from '../../assets/images/pie-chart.png'
+import logout from '../../assets/images/logout.png'
+
 import { Sidebar } from './styles'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -28,14 +33,13 @@ const SidebarComponent = () => {
                 <img src={logo} alt="logo da ferreira costa" />
 
                 <ul>
-                    <Link to="/homepage"><li><button>Dashboard</button></li></Link>
-                    <hr />
-                    <Link to="/pedidos"><li><button>Pedidos</button></li></Link>
+                    <Link to="/homepage"><li className='firstLink'><a><img src={dashboard} className='icon' />Dashboard</a></li></Link>
+                    <Link to="/pedidos"><li><a><img src={orders} className='icon' />Pedidos</a></li></Link>
                 </ul>
             </div>
 
             <div>
-                <Link to="/"><button onClick={showToastMessage} >Logout</button></Link>
+                <Link to="/"><a onClick={showToastMessage} className='logoutBtn'><img src={logout} className='icon' /></a></Link>
             </div>
         </Sidebar>
     )

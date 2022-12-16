@@ -4,10 +4,16 @@ import mockedNewerOrders from '../../mocked_data/mockedOrders'
 import mockedLateOrders from '../../mocked_data/mockedLateOrders'
 import mockedInTransportationOrders from '../../mocked_data/mockedInTransportationOrders'
 import mockedClosestOrders from '../../mocked_data/mockedClosestOrders'
+import mockedOrders from '../../mocked_data/mockedOrders'
+import mockedDeliveredOrders from '../../mocked_data/mockedDeliveredOrders'
+import mockedDeniedOrders from '../../mocked_data/mockedDeniedOrders'
 
 
 const DashboardComponent = () => {
 
+    const lateRatio: number = (mockedLateOrders.length / mockedOrders.length) * 100
+    const deliveredRatio: number = (mockedDeliveredOrders.length / mockedOrders.length) * 100
+    const deniedRatio: number = (mockedDeniedOrders.length / mockedOrders.length) * 100
 
     return (
 
@@ -24,10 +30,10 @@ const DashboardComponent = () => {
                         </tr>
 
                         <tr>
-                            <td>460 (46%)</td>
-                            <td className='deliveredPct'>400 (40%)</td>
-                            <td className='delayedPct'>50 (5%)</td>
-                            <td className='deniedPct'>90 (9%)</td>
+                            <td>{mockedOrders.length} ({(mockedOrders.length / mockedOrders.length) * 100}%)</td>
+                            <td className='deliveredPct'>{mockedDeliveredOrders.length} ({lateRatio.toFixed(1)}%)</td>
+                            <td className='delayedPct'>{mockedLateOrders.length} ({lateRatio.toFixed(1)}%)</td>
+                            <td className='deniedPct'>{mockedDeniedOrders.length} ({deniedRatio.toFixed(1)}%)</td>
                         </tr>
 
                     </table>

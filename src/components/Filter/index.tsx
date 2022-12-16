@@ -14,7 +14,7 @@ const Filter: any = ({ selected, setSelected,  options}: Props) => {
 
     return (
         <TimeFilter>
-            <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}><p>{selected}</p> ▼</div>
+            <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}><p><b>Filtro: </b>{selected}</p> ▼</div>
             {isActive && (
                 <div className="dropdown-content">
                     {options.map(option => (

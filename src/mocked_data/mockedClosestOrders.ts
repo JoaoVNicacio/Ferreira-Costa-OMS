@@ -1,5 +1,6 @@
 import mockedOrders from './mockedOrders';
 
+// Organizando pela ordem de data de entrega mais próxima dos pedidos:
 const mockedClosestOrders: {
 
   id: number,

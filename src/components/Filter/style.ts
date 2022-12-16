@@ -24,14 +24,18 @@ export const TimeFilter = styled.div`
         padding: 5px;
         background-color: #fff;
         width: 90%;
-        border-radius: 8px;
+        border-radius: 0 0 8px 8px;
         box-shadow: 0 3px 3px 0px rgba(0, 0, 0,0.2);
+        width: 20vw;
+        margin-top: -0.5rem;
     }
 
     .dropdown-item{
         padding: 5px;
         cursor: pointer;
         transition: all .2s;
+        width: 19.5vw;
+        border-top: 1px solid;
 
         &:hover{
             background-color: #f4f4f4;

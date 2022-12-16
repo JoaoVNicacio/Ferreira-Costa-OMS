@@ -37,6 +37,7 @@ export const OrderTable = styled.section`
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 gap: 10px;
 
                 button{
@@ -47,10 +48,22 @@ export const OrderTable = styled.section`
                     height: 30px;
                 }
 
+                button: hover{
+                    background-color: #F5F5F5;
+                    border-radius: 50%;
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    border: solid 1px;
+                    box-shadow: 0 2px 2px 0px rgba(0, 0.7, 0, 0.6);
+                    transition: all .2s;
+                }
+
                 td{
                     margin: 0.5rem;
                     width: 13%;
                     text-align: center;
+                    font-size: 12px;
                 }
 
                 td:nth-child(3){
@@ -61,6 +74,7 @@ export const OrderTable = styled.section`
         }
 
         tbody{
+            
             tr{
                 div{
                     td:last-child{
@@ -71,19 +85,27 @@ export const OrderTable = styled.section`
                             cursor: pointer;
                         }
 
-                        div.dropdown-content{
-                            position: absolute;
-                            background-color: #f1f1f1;
-                            min-width: 160px;
-                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                            z-index: 1;
-
-                            a{
-
-                            }
-                        }
                     }
                 }
+            }
+        }
+
+        div.dropdown-content{
+            position: relative;
+            z-index: 1;
+            background-color: #F9F6F6;
+            border: 1px solid;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 2px 0px rgba(0, 0, 0,0.2);
+            margin: 0.5%;
+            margin-top: -1.1%;
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            a{
+
             }
         }
 

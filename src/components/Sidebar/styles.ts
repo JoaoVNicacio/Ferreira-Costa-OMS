@@ -19,34 +19,88 @@ export const Sidebar = styled.aside`
         flex-direction: column;
         justify-content: center;
 
-
-        li :hover{
-            background-color: #E8273F;
-            width: 9rem;
-            border-radius: 4px;
-        }
-
         li{
-            color: #fff;
-            width: 9rem;
-            margin: 10%;
+            justify-content: center;
+            padding-right: 3rem;
+            width: 10rem;
+
+            a:hover{
+                background-color: #E8273F;
+                width: 9rem;
+                border-radius: 4px;
+                height: 2rem;
+                margin-right: 3%;
+                border-left: #74B740 solid 0.4rem;
+                transition: all .2s;
+            }
+    
+            a{
+                color: #fff;
+                height: 1.5rem;
+                width: 9rem;
+                margin: 10%;
+                height: 2rem;
+                margin-right: 3%;
+            }
         }
 
+        .firstLink{
+            border-bottom: solid 1px;
+            border-color: #FFF;
+        }
 
+        .firstLink: hover{
+            border-bottom: solid 1px;
+            border-color: #FFF;
+        }
     }
 
-    button{
+    a{
         background-color: rgb(255, 255, 255, 0);
         border: none;
         cursor: pointer;
         color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        
+       
     }
 
-    button :hover{
-        background-color: #AA0E27;
+    a :hover{
+        background-color: #AA0E27;       
         border: none;
         cursor: pointer;
         color: #fff;
+        transition: all .2s;
+    }
+
+    .logoutBtn{
+        background-color: rgb(255, 255, 255, 0);
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        
+       
+    }
+
+    .logoutBtn :hover{
+        background-color: #E8273F;       
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        transition: all .2s;
+        border-bottom: #74B740 solid 0.4rem;
+        border-radius: 4px;
+        padding: 0.5rem;
+    }
+
+    .icon{
+        margin-right: 0.5rem;
+        margin-left: 0.2rem;
     }
 
 `

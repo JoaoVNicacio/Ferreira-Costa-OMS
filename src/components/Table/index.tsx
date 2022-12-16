@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import { OrderTable } from './styles'
 import mockedOrders from '../../mocked_data/mockedOrders'
 
@@ -18,13 +18,14 @@ const TableComponent = () => {
                         <th>Status</th>
                         <th>Data de entrada</th>
                         <th>Data de entrega</th>
-                        <th></th>
+                        <th>Mais Informações</th>
                     </tr>
                 </thead>
                 <hr />
 
                 <tbody>
                     {mockedOrders.map((mockedOrder, index) =>
+                        <div>
                             <tr key={index}>
                                 <div>
                                     <td>{`#${mockedOrder.id}`}</td>
@@ -34,15 +35,18 @@ const TableComponent = () => {
                                     <td>{mockedOrder.dateOfEnter.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     <td>{mockedOrder.dateOfDeliveryDeadline.toLocaleString('pt-BR', { hour12: false, day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                     <td>
-                                        <button onClick={e => setIsActive(!isActive)}>▼</button>
-                                        {isActive && (
-                                            <div className='dropdown-content'>
-                                                <a href="#">algo</a>
-                                            </div>
-                                        )}
+                                    <button onClick={e => setIsActive(!isActive)}>▼</button>
                                     </td>
                                 </div>
                             </tr>
+
+                            {isActive && (
+                                <div className='dropdown-content'>
+                                    <a href="#">algo</a>
+                                </div>
+                            )}
+
+                        </div>
                     )}
                 </tbody>
             </table>

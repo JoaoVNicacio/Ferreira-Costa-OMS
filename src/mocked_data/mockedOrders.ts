@@ -74,7 +74,6 @@ const mockedOrders: {
             dateOfDelivery: 0,
             commentary: ""
         },
-
         {
             id: 2447,
             name: "Peter",
@@ -82,6 +81,42 @@ const mockedOrders: {
             status: "Em transporte",
             dateOfDeliveryDeadline: new Date(2022, 10, 15),
             dateOfEnter: new Date(2022, 10, 12, 14),
+            products: [
+                "1x Serra Circular", "1x Trena", "2x Caixa de ferramentas"
+            ],
+            spentTimeInAntifraud: 2,
+            spentTimeInSeparation: 0,
+            spentTimeInPackaging: 0,
+            spentTimeInLogistics: 0,
+            spentTimeInTransportation: 0,
+            dateOfDelivery: 0,
+            commentary: ""
+        },
+        {
+            id: 2448,
+            name: "Hennson",
+            email: "hennson@email.com",
+            status: "Entregue",
+            dateOfDeliveryDeadline: new Date(2022, 10, 20,),
+            dateOfEnter: new Date(2022, 10, 12, ),
+            products: [
+                "1x Serra Circular", "1x Trena", "2x Caixa de ferramentas"
+            ],
+            spentTimeInAntifraud: 2,
+            spentTimeInSeparation: 0,
+            spentTimeInPackaging: 0,
+            spentTimeInLogistics: 0,
+            spentTimeInTransportation: 0,
+            dateOfDelivery: 0,
+            commentary: ""
+        },
+        {
+            id: 2449,
+            name: "Hennson",
+            email: "hennson@email.com",
+            status: "Negado",
+            dateOfDeliveryDeadline: new Date(2022, 10, 20,),
+            dateOfEnter: new Date(2022, 10, 12, ),
             products: [
                 "1x Serra Circular", "1x Trena", "2x Caixa de ferramentas"
             ],
